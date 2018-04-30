@@ -10,6 +10,21 @@
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo $this->url->get('img/favicon.ico')?>"/>
     </head>
     <body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Pesonal Training</a>
+			</div>
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="\personaltraining\booking\search">Home</a></li>
+			<li><a href="#">Login/Register</a></li>
+			<li><a href="\personaltraining\booking\new">Book</a></li>
+			<li><a href="\personaltraining\trainer">Trainer</a></li>
+			<li><a href="\personaltraining\trainer\new">Create Trainer</a></li>
+			<li><a href="\personaltraining\member\new">Create Member</a></li>
+			</ul>
+			</div>
+		</nav>
         <div class="container">
             <?php echo $this->getContent(); ?>
         </div>

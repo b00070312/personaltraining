@@ -59,7 +59,8 @@ class BookingController extends ControllerBase
      */
     public function newAction()
     {
-
+		$this->view->members=Member::find();
+		$this->view->trainers=Trainer::find();
     }
 
     /**
